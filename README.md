@@ -1,0 +1,1 @@
+abeceda zedla deda
