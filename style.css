@@ -1,0 +1,10 @@
+section{
+    height: 50vh;
+    margin: 4rem;
+    border: 5px black;
+    border-style: dashed solid;
+}
+
+section h2{
+    font-size: 3rem;
+}
