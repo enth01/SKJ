@@ -1,5 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+
 section{
-    height: 50vh;
+    height: 80vh;
     margin: 4rem;
     border: 5px black;
     border-style: dashed solid;
