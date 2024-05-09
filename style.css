@@ -1,14 +1,88 @@
-html{
-    scroll-behavior: smooth;
+header{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-section{
-    height: 80vh;
-    margin: 4rem;
-    border: 5px black;
-    border-style: dashed solid;
+.pozadie{
+    height: 75vh;
+    background-image: url(./obrazky/tobias-keller-2ecH5Lw3zSk-unsplash.png);
+    background-size: cover;
+    position: relative;
 }
 
-section h2{
-    font-size: 3rem;
+.hlavnyNadpis{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.navbarVec{
+    color: rgb(255, 255, 255) !important;
+    transition: 3s !important;
+    position: relative;
+}
+
+.navbarVec:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    transition: all 300ms ease-in;
+    bottom: 15%;
+    right: 0.5rem;
+    background-color: #fff;
+}
+
+.navbarVec:hover::after {
+    width: 60%;
+}
+
+.stlpceKontajner{
+    overflow: hidden;
+    position: relative;
+}
+
+.stlpce{
+    height: 50rem;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.stlpce:hover{
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.stlpceKontajner h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+}
+
+.stlpec1{
+    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+}
+
+.stlpec2{
+    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+}
+
+.stlpec3{
+    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+}
+
+.stlpec4{
+    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
 }
