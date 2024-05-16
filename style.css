@@ -1,3 +1,7 @@
+#body{
+    background-color: #252525;
+}
+
 header{
     z-index: 1;
     position: absolute;
@@ -6,18 +10,29 @@ header{
 }
 
 .pozadie{
-    height: 75vh;
+    height: 100vh;
     background-image: url(./obrazky/tobias-keller-2ecH5Lw3zSk-unsplash.png);
     background-size: cover;
     position: relative;
 }
 
-.hlavnyNadpis{
+.centrovanie{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 80%;
     color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+#hlavnyNadpis{
+    font-size: 3rem;
+}
+
+.nehlavnyNadpis{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
 }
 
 .navbarVec{
@@ -47,11 +62,12 @@ header{
 }
 
 .stlpce{
-    height: 50rem;
+    height: 75vh;
     background-position: center;
     background-size: cover;
     color: #fff;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .stlpce:hover{
@@ -72,17 +88,36 @@ header{
 }
 
 .stlpec1{
-    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+    background-image: url(./obrazky/samuel-girven-VJ2s0c20qCo-unsplash.jpg);
 }
 
 .stlpec2{
-    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+    background-image: url(./obrazky/Screenshot\ 2024-05-13\ 102919.png);
 }
 
 .stlpec3{
-    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+    background-image: url(./obrazky/walkator-klMii3cR9iI-unsplash.jpg);
 }
 
 .stlpec4{
-    background-image: url(./obrazky/rory-macdonald-left-robbie-lawler-exchange-blows-t.webp);
+    background-image: url(./obrazky/Stredná_priemyselná_škola_elektrotechnická_Zochova_9.jpg);
+}
+
+.svgecka{
+    width: 2rem;
+}
+
+.frutcakeText{
+    padding: 1rem 5rem 0 0;
+}
+
+#obrazok_stred{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
