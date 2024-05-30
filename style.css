@@ -1,12 +1,36 @@
+@media screen and (min-width: 900px) {
+    .penis{
+      position: relative;
+    }
+}
+
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 #body{
     background-color: #252525;
 }
 
-header{
+#textMain{
+    margin: 4rem auto;
+    max-width: 37rem;
+}
+
+footer{
+    height: 30rem;
+}
+
+#skurvenyHeader{
     z-index: 1;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen {
+    
 }
 
 .pozadie{
@@ -37,7 +61,6 @@ header{
 
 .navbarVec{
     color: rgb(255, 255, 255) !important;
-    transition: 3s !important;
     position: relative;
 }
 
@@ -120,4 +143,39 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.footerCenter{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.svgec{
+    fill: rgba(248,249,250);
+    transition: 200ms;
+    margin-right: 0.7rem;
+}
+
+.emailBox{
+    height: 15rem;
+    width: 15rem;
+    background-color: rgba(218, 165, 32, 0.734);
+    position: absolute;
+    border-radius: 0.75rem;
+    box-shadow: 2rem 2rem 2rem 0 rgb(0, 0, 0);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.svgec:hover{
+    fill: goldenrod;
+}
+
+.rubik-mono-one-regular{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
 }

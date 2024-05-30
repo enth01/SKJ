@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Calendar</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 90vh;
+            height: 6   0vh;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            cursor: pointer;
+        }
+        .month-label {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .calendar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .calendar-month {
+            flex: 0 0 100%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <!-- January -->
+        <div class="calendar-month">
+            <div class="month-label">January</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- February -->
+        <div class="calendar-month">
+            <div class="month-label">February</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- March -->
+        <div class="calendar-month">
+            <div class="month-label">March</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Continue this structure for all remaining months -->
+        <!-- April -->
+        <div class="calendar-month">
+            <div class="month-label">April</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- May -->
+        <div class="calendar-month">
+            <div class="month-label">May</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- June -->
+        <div class="calendar-month">
+            <div class="month-label">June</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+        <!-- July -->
+        <div class="calendar-month">
+            <div class="month-label">July</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- August -->
+        <div class="calendar-month">
+            <div class="month-label">August</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- September -->
+        <div class="calendar-month">
+            <div class="month-label">September</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- October -->
+        <div class="calendar-month">
+            <div class="month-label">October</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- November -->
+        <div class="calendar-month">
+            <div class="month-label">November</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" >30</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- December -->
+        <div class="calendar-month">
+            <div class="month-label">December</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td contenteditable="true" >1</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" >8</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" >15</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" >22</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" >29</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" >31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
