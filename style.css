@@ -1,6 +1,38 @@
-@media screen and (min-width: 900px) {
-    .penis{
-      position: relative;
+@media screen and (max-width: 768px) {
+    #Header{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+    }
+    .navbarVec{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .navbarVec:after{
+        right: 0rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #Header{
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #textMain{
+        margin: 4rem 1rem;
+        max-width: 37rem;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    #textMain{
+        margin: 4rem auto;
+        max-width: 37rem;
     }
 }
 
@@ -9,28 +41,25 @@ html{
     overflow-x: hidden;
 }
 
-#body{
-    background-color: #252525;
-}
-
-#textMain{
-    margin: 4rem auto;
-    max-width: 37rem;
-}
-
 footer{
-    height: 30rem;
+    height: 15rem !important;
+    background: transparent !important;
 }
 
-#skurvenyHeader{
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+#body{
+    background-color: #6C7B8B;
 }
 
-@media screen {
-    
+.textColor{
+    color: #FFFFCC !important;
+}
+
+#hlavnyNadpis{
+    font-size: 3rem;
+}
+
+.navbar-nav{
+    margin: 0 auto;
 }
 
 .pozadie{
@@ -49,18 +78,8 @@ footer{
     text-align: right;
 }
 
-#hlavnyNadpis{
-    font-size: 3rem;
-}
-
-.nehlavnyNadpis{
-    margin-top: 3rem !important;
-    margin-bottom: 3rem;
-    font-size: 1.7rem;
-}
-
 .navbarVec{
-    color: rgb(255, 255, 255) !important;
+    /* color: rgb(255, 255, 255) !important; */
     position: relative;
 }
 
@@ -72,7 +91,7 @@ footer{
     transition: all 300ms ease-in;
     bottom: 15%;
     right: 0.5rem;
-    background-color: #fff;
+    background-color: #FFFFCC;
 }
 
 .navbarVec:hover::after {
@@ -82,6 +101,7 @@ footer{
 .stlpceKontajner{
     overflow: hidden;
     position: relative;
+    font-family: "Raleway", sans-serif;
 }
 
 .stlpce{
@@ -124,58 +144,4 @@ footer{
 
 .stlpec4{
     background-image: url(./obrazky/Stredná_priemyselná_škola_elektrotechnická_Zochova_9.jpg);
-}
-
-.svgecka{
-    width: 2rem;
-}
-
-.frutcakeText{
-    padding: 1rem 5rem 0 0;
-}
-
-#obrazok_stred{
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.footerCenter{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.svgec{
-    fill: rgba(248,249,250);
-    transition: 200ms;
-    margin-right: 0.7rem;
-}
-
-.emailBox{
-    height: 15rem;
-    width: 15rem;
-    background-color: rgba(218, 165, 32, 0.734);
-    position: absolute;
-    border-radius: 0.75rem;
-    box-shadow: 2rem 2rem 2rem 0 rgb(0, 0, 0);
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.svgec:hover{
-    fill: goldenrod;
-}
-
-.rubik-mono-one-regular{
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
 }
