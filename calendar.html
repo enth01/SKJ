@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year Calendar</title>
     <link rel="stylesheet" href="./calendar_style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="calendar-container">
+
+        <nav class="navbar navbar-expand-md" id="Header">
+            <div class="container-fluid">
+                <button id="colapseButon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" onclick="paddingPreResponzivitu()"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbarVec textColor" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbarVec textColor" href="./calendar.html">Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbarVec textColor" href="./form.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbarVec textColor" href="#">TBA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- January -->
         <div class="calendar-month">
-            <div class="month-label">January</div>
+            <div class="month-label" id="monthLabelJanuary" style="padding-top: 8rem;">January</div>
             <table>
                 <thead>
                     <tr>
@@ -25,45 +56,45 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" data-date="january 1" >1</td>
+                        <td contenteditable="true" data-date="january 2" >2</td>
+                        <td contenteditable="true" data-date="january 3" >3</td>
+                        <td contenteditable="true" data-date="january 4" >4</td>
+                        <td contenteditable="true" data-date="january 5" >5</td>
+                        <td contenteditable="true" data-date="january 6" >6</td>
+                        <td contenteditable="true" data-date="january 7" >7</td>
+                    </tr> 
+                    <tr> 
+                        <td contenteditable="true" data-date="january 8" >8</td>
+                        <td contenteditable="true" data-date="january 9" >9</td>
+                        <td contenteditable="true" data-date="january 10" >10</td>
+                        <td contenteditable="true" data-date="january 11" >11</td>
+                        <td contenteditable="true" data-date="january 12" >12</td>
+                        <td contenteditable="true" data-date="january 13" >13</td>
+                        <td contenteditable="true" data-date="january 14" >14</td>
+                    </tr>
+                    <tr> 
+                        <td contenteditable="true" data-date="january 15" >15</td>
+                        <td contenteditable="true" data-date="january 16" >16</td>
+                        <td contenteditable="true" data-date="january 17" >17</td>
+                        <td contenteditable="true" data-date="january 18" >18</td>
+                        <td contenteditable="true" data-date="january 19" >19</td>
+                        <td contenteditable="true" data-date="january 20" >20</td>
+                        <td contenteditable="true" data-date="january 21" >21</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" data-date="january 22" >22</td>
+                        <td contenteditable="true" data-date="january 23" >23</td>
+                        <td contenteditable="true" data-date="january 24" >24</td>
+                        <td contenteditable="true" data-date="january 25" >25</td>
+                        <td contenteditable="true" data-date="january 26" >26</td>
+                        <td contenteditable="true" data-date="january 27" >27</td>
+                        <td contenteditable="true" data-date="january 28" >28</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="january 29" >29</td>
+                        <td contenteditable="true" data-date="january 30" >30</td>
+                        <td contenteditable="true" data-date="january 31" >31</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -92,43 +123,43 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" data-date="february 1" >1</td>
+                        <td contenteditable="true" data-date="february 2" >2</td>
+                        <td contenteditable="true" data-date="february 3" >3</td>
+                        <td contenteditable="true" data-date="february 4" >4</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" data-date="february 5" >5</td>
+                        <td contenteditable="true" data-date="february 6" >6</td>
+                        <td contenteditable="true" data-date="february 7" >7</td>
+                        <td contenteditable="true" data-date="february 8" >8</td>
+                        <td contenteditable="true" data-date="february 9" >9</td>
+                        <td contenteditable="true" data-date="february 10" >10</td>
+                        <td contenteditable="true" data-date="february 11" >11</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" data-date="february 12" >12</td>
+                        <td contenteditable="true" data-date="february 13" >13</td>
+                        <td contenteditable="true" data-date="february 14" >14</td>
+                        <td contenteditable="true" data-date="february 15" >15</td>
+                        <td contenteditable="true" data-date="february 16" >16</td>
+                        <td contenteditable="true" data-date="february 17" >17</td>
+                        <td contenteditable="true" data-date="february 18" >18</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" data-date="february 19" >19</td>
+                        <td contenteditable="true" data-date="february 20" >20</td>
+                        <td contenteditable="true" data-date="february 21" >21</td>
+                        <td contenteditable="true" data-date="february 22" >22</td>
+                        <td contenteditable="true" data-date="february 23" >23</td>
+                        <td contenteditable="true" data-date="february 24" >24</td>
+                        <td contenteditable="true" data-date="february 25" >25</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" data-date="february 26" >26</td>
+                        <td contenteditable="true" data-date="february 27" >27</td>
+                        <td contenteditable="true" data-date="february 28" >28</td>
+                        <td contenteditable="true" data-date="february 29" >29</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -157,45 +188,45 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" data-date="march 1">1</td>
+                        <td contenteditable="true" data-date="march 2">2</td>
+                        <td contenteditable="true" data-date="march 3">3</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" data-date="march 4">4</td>
+                        <td contenteditable="true" data-date="march 5">5</td>
+                        <td contenteditable="true" data-date="march 6">6</td>
+                        <td contenteditable="true" data-date="march 7">7</td>
+                        <td contenteditable="true" data-date="march 8">8</td>
+                        <td contenteditable="true" data-date="march 9">9</td>
+                        <td contenteditable="true" data-date="march 10">10</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" data-date="march 11">11</td>
+                        <td contenteditable="true" data-date="march 12">12</td>
+                        <td contenteditable="true" data-date="march 13">13</td>
+                        <td contenteditable="true" data-date="march 14">14</td>
+                        <td contenteditable="true" data-date="march 15">15</td>
+                        <td contenteditable="true" data-date="march 16">16</td>
+                        <td contenteditable="true" data-date="march 17">17</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" data-date="march 18">18</td>
+                        <td contenteditable="true" data-date="march 19">19</td>
+                        <td contenteditable="true" data-date="march 20">20</td>
+                        <td contenteditable="true" data-date="march 21">21</td>
+                        <td contenteditable="true" data-date="march 22">22</td>
+                        <td contenteditable="true" data-date="march 23">23</td>
+                        <td contenteditable="true" data-date="march 24">24</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="march 25">25</td>
+                        <td contenteditable="true" data-date="march 26">26</td>
+                        <td contenteditable="true" data-date="march 27">27</td>
+                        <td contenteditable="true" data-date="march 28">28</td>
+                        <td contenteditable="true" data-date="march 29">29</td>
+                        <td contenteditable="true" data-date="march 30">30</td>
+                        <td contenteditable="true" data-date="march 31">31</td>
                     </tr>
                 </tbody>
             </table>
@@ -218,44 +249,44 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" data-date="april 1" >1</td>
+                        <td contenteditable="true" data-date="april 2" >2</td>
+                        <td contenteditable="true" data-date="april 3" >3</td>
+                        <td contenteditable="true" data-date="april 4" >4</td>
+                        <td contenteditable="true" data-date="april 5" >5</td>
+                        <td contenteditable="true" data-date="april 6" >6</td>
+                        <td contenteditable="true" data-date="april 7" >7</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" data-date="april 8" >8</td>
+                        <td contenteditable="true" data-date="april 9" >9</td>
+                        <td contenteditable="true" data-date="april 10" >10</td>
+                        <td contenteditable="true" data-date="april 11" >11</td>
+                        <td contenteditable="true" data-date="april 12" >12</td>
+                        <td contenteditable="true" data-date="april 13" >13</td>
+                        <td contenteditable="true" data-date="april 14" >14</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" data-date="april 15" >15</td>
+                        <td contenteditable="true" data-date="april 16" >16</td>
+                        <td contenteditable="true" data-date="april 17" >17</td>
+                        <td contenteditable="true" data-date="april 18" >18</td>
+                        <td contenteditable="true" data-date="april 19" >19</td>
+                        <td contenteditable="true" data-date="april 20" >20</td>
+                        <td contenteditable="true" data-date="april 21" >21</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" data-date="april 22" >22</td>
+                        <td contenteditable="true" data-date="april 23" >23</td>
+                        <td contenteditable="true" data-date="april 24" >24</td>
+                        <td contenteditable="true" data-date="april 25" >25</td>
+                        <td contenteditable="true" data-date="april 26" >26</td>
+                        <td contenteditable="true" data-date="april 27" >27</td>
+                        <td contenteditable="true" data-date="april 28" >28</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" data-date="april 29" >29</td>
+                        <td contenteditable="true" data-date="april 30" >30</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -284,45 +315,45 @@
                     <tr>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
+                        <td contenteditable="true" data-date="may 1" >1</td>
+                        <td contenteditable="true" data-date="may 2" >2</td>
+                        <td contenteditable="true" data-date="may 3" >3</td>
+                        <td contenteditable="true" data-date="may 4" >4</td>
+                        <td contenteditable="true" data-date="may 5" >5</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
+                        <td contenteditable="true" data-date="may 6" >6</td>
+                        <td contenteditable="true" data-date="may 7" >7</td>
+                        <td contenteditable="true" data-date="may 8" >8</td>
+                        <td contenteditable="true" data-date="may 9" >9</td>
+                        <td contenteditable="true" data-date="may 10" >10</td>
+                        <td contenteditable="true" data-date="may 11" >11</td>
+                        <td contenteditable="true" data-date="may 12" >12</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
+                        <td contenteditable="true" data-date="may 13" >13</td>
+                        <td contenteditable="true" data-date="may 14" >14</td>
+                        <td contenteditable="true" data-date="may 15" >15</td>
+                        <td contenteditable="true" data-date="may 16" >16</td>
+                        <td contenteditable="true" data-date="may 17" >17</td>
+                        <td contenteditable="true" data-date="may 18" >18</td>
+                        <td contenteditable="true" data-date="may 19" >19</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
+                        <td contenteditable="true" data-date="may 20" >20</td>
+                        <td contenteditable="true" data-date="may 21" >21</td>
+                        <td contenteditable="true" data-date="may 22" >22</td>
+                        <td contenteditable="true" data-date="may 23" >23</td>
+                        <td contenteditable="true" data-date="may 24" >24</td>
+                        <td contenteditable="true" data-date="may 25" >25</td>
+                        <td contenteditable="true" data-date="may 26" >26</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="may 27" >27</td>
+                        <td contenteditable="true" data-date="may 28" >28</td>
+                        <td contenteditable="true" data-date="may 29" >29</td>
+                        <td contenteditable="true" data-date="may 30" >30</td>
+                        <td contenteditable="true" data-date="may 31" >31</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -351,44 +382,44 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
+                        <td contenteditable="true" data-date="june 1" >1</td>
+                        <td contenteditable="true" data-date="june 2" >2</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
+                        <td contenteditable="true" data-date="june 3" >3</td>
+                        <td contenteditable="true" data-date="june 4" >4</td>
+                        <td contenteditable="true" data-date="june 5" >5</td>
+                        <td contenteditable="true" data-date="june 6" >6</td>
+                        <td contenteditable="true" data-date="june 7" >7</td>
+                        <td contenteditable="true" data-date="june 8" >8</td>
+                        <td contenteditable="true" data-date="june 9" >9</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
+                        <td contenteditable="true" data-date="june 10" >10</td>
+                        <td contenteditable="true" data-date="june 11" >11</td>
+                        <td contenteditable="true" data-date="june 12" >12</td>
+                        <td contenteditable="true" data-date="june 13" >13</td>
+                        <td contenteditable="true" data-date="june 14" >14</td>
+                        <td contenteditable="true" data-date="june 15" >15</td>
+                        <td contenteditable="true" data-date="june 16" >16</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
+                        <td contenteditable="true" data-date="june 17" >17</td>
+                        <td contenteditable="true" data-date="june 18" >18</td>
+                        <td contenteditable="true" data-date="june 19" >19</td>
+                        <td contenteditable="true" data-date="june 20" >20</td>
+                        <td contenteditable="true" data-date="june 21" >21</td>
+                        <td contenteditable="true" data-date="june 22" >22</td>
+                        <td contenteditable="true" data-date="june 23" >23</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" data-date="june 24" >24</td>
+                        <td contenteditable="true" data-date="june 25" >25</td>
+                        <td contenteditable="true" data-date="june 26" >26</td>
+                        <td contenteditable="true" data-date="june 27" >27</td>
+                        <td contenteditable="true" data-date="june 28" >28</td>
+                        <td contenteditable="true" data-date="june 29" >29</td>
+                        <td contenteditable="true" data-date="june 30" >30</td>
                     </tr>
                 </tbody>
             </table>            
@@ -410,45 +441,45 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
+                        <td contenteditable="true" data-date="july 1" >1</td>
+                        <td contenteditable="true" data-date="july 2" >2</td>
+                        <td contenteditable="true" data-date="july 3" >3</td>
+                        <td contenteditable="true" data-date="july 4" >4</td>
+                        <td contenteditable="true" data-date="july 5" >5</td>
+                        <td contenteditable="true" data-date="july 6" >6</td>
+                        <td contenteditable="true" data-date="july 7" >7</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
+                        <td contenteditable="true" data-date="july 8" >8</td>
+                        <td contenteditable="true" data-date="july 9" >9</td>
+                        <td contenteditable="true" data-date="july 10" >10</td>
+                        <td contenteditable="true" data-date="july 11" >11</td>
+                        <td contenteditable="true" data-date="july 12" >12</td>
+                        <td contenteditable="true" data-date="july 13" >13</td>
+                        <td contenteditable="true" data-date="july 14" >14</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
+                        <td contenteditable="true" data-date="july 15" >15</td>
+                        <td contenteditable="true" data-date="july 16" >16</td>
+                        <td contenteditable="true" data-date="july 17" >17</td>
+                        <td contenteditable="true" data-date="july 18" >18</td>
+                        <td contenteditable="true" data-date="july 19" >19</td>
+                        <td contenteditable="true" data-date="july 20" >20</td>
+                        <td contenteditable="true" data-date="july 21" >21</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
+                        <td contenteditable="true" data-date="july 22" >22</td>
+                        <td contenteditable="true" data-date="july 23" >23</td>
+                        <td contenteditable="true" data-date="july 24" >24</td>
+                        <td contenteditable="true" data-date="july 25" >25</td>
+                        <td contenteditable="true" data-date="july 26" >26</td>
+                        <td contenteditable="true" data-date="july 27" >27</td>
+                        <td contenteditable="true" data-date="july 28" >28</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="july 29" >29</td>
+                        <td contenteditable="true" data-date="july 30" >30</td>
+                        <td contenteditable="true" data-date="july 31" >31</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -477,45 +508,45 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
+                        <td contenteditable="true" data-date="august 1" >1</td>
+                        <td contenteditable="true" data-date="august 2" >2</td>
+                        <td contenteditable="true" data-date="august 3" >3</td>
+                        <td contenteditable="true" data-date="august 4" >4</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
+                        <td contenteditable="true" data-date="august 5" >5</td>
+                        <td contenteditable="true" data-date="august 6" >6</td>
+                        <td contenteditable="true" data-date="august 7" >7</td>
+                        <td contenteditable="true" data-date="august 8" >8</td>
+                        <td contenteditable="true" data-date="august 9" >9</td>
+                        <td contenteditable="true" data-date="august 10" >10</td>
+                        <td contenteditable="true" data-date="august 11" >11</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
+                        <td contenteditable="true" data-date="august 12" >12</td>
+                        <td contenteditable="true" data-date="august 13" >13</td>
+                        <td contenteditable="true" data-date="august 14" >14</td>
+                        <td contenteditable="true" data-date="august 15" >15</td>
+                        <td contenteditable="true" data-date="august 16" >16</td>
+                        <td contenteditable="true" data-date="august 17" >17</td>
+                        <td contenteditable="true" data-date="august 18" >18</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
+                        <td contenteditable="true" data-date="august 19" >19</td>
+                        <td contenteditable="true" data-date="august 20" >20</td>
+                        <td contenteditable="true" data-date="august 21" >21</td>
+                        <td contenteditable="true" data-date="august 22" >22</td>
+                        <td contenteditable="true" data-date="august 23" >23</td>
+                        <td contenteditable="true" data-date="august 24" >24</td>
+                        <td contenteditable="true" data-date="august 25" >25</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="august 26" >26</td>
+                        <td contenteditable="true" data-date="august 27" >27</td>
+                        <td contenteditable="true" data-date="august 28" >28</td>
+                        <td contenteditable="true" data-date="august 29" >29</td>
+                        <td contenteditable="true" data-date="august 30" >30</td>
+                        <td contenteditable="true" data-date="august 31" >31</td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -544,46 +575,46 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" data-date="september 1" >1</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" data-date="september 2" >2</td>
+                        <td contenteditable="true" data-date="september 3" >3</td>
+                        <td contenteditable="true" data-date="september 4" >4</td>
+                        <td contenteditable="true" data-date="september 5" >5</td>
+                        <td contenteditable="true" data-date="september 6" >6</td>
+                        <td contenteditable="true" data-date="september 7" >7</td>
+                        <td contenteditable="true" data-date="september 8" >8</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" data-date="september 9" >9</td>
+                        <td contenteditable="true" data-date="september 10" >10</td>
+                        <td contenteditable="true" data-date="september 11" >11</td>
+                        <td contenteditable="true" data-date="september 12" >12</td>
+                        <td contenteditable="true" data-date="september 13" >13</td>
+                        <td contenteditable="true" data-date="september 14" >14</td>
+                        <td contenteditable="true" data-date="september 15" >15</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" data-date="september 16" >16</td>
+                        <td contenteditable="true" data-date="september 17" >17</td>
+                        <td contenteditable="true" data-date="september 18" >18</td>
+                        <td contenteditable="true" data-date="september 19" >19</td>
+                        <td contenteditable="true" data-date="september 20" >20</td>
+                        <td contenteditable="true" data-date="september 21" >21</td>
+                        <td contenteditable="true" data-date="september 22" >22</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" data-date="september 23" >23</td>
+                        <td contenteditable="true" data-date="september 24" >24</td>
+                        <td contenteditable="true" data-date="september 25" >25</td>
+                        <td contenteditable="true" data-date="september 26" >26</td>
+                        <td contenteditable="true" data-date="september 27" >27</td>
+                        <td contenteditable="true" data-date="september 28" >28</td>
+                        <td contenteditable="true" data-date="september 29" >29</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" data-date="september 30" >30</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -612,45 +643,45 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
+                        <td contenteditable="true" data-date="october 1" >1</td>
+                        <td contenteditable="true" data-date="october 2" >2</td>
+                        <td contenteditable="true" data-date="october 3" >3</td>
+                        <td contenteditable="true" data-date="october 4" >4</td>
+                        <td contenteditable="true" data-date="october 5" >5</td>
+                        <td contenteditable="true" data-date="october 6" >6</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
+                        <td contenteditable="true" data-date="october 7" >7</td>
+                        <td contenteditable="true" data-date="october 8" >8</td>
+                        <td contenteditable="true" data-date="october 9" >9</td>
+                        <td contenteditable="true" data-date="october 10" >10</td>
+                        <td contenteditable="true" data-date="october 11" >11</td>
+                        <td contenteditable="true" data-date="october 12" >12</td>
+                        <td contenteditable="true" data-date="october 13" >13</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
+                        <td contenteditable="true" data-date="october 14" >14</td>
+                        <td contenteditable="true" data-date="october 15" >15</td>
+                        <td contenteditable="true" data-date="october 16" >16</td>
+                        <td contenteditable="true" data-date="october 17" >17</td>
+                        <td contenteditable="true" data-date="october 18" >18</td>
+                        <td contenteditable="true" data-date="october 19" >19</td>
+                        <td contenteditable="true" data-date="october 20" >20</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
+                        <td contenteditable="true" data-date="october 21" >21</td>
+                        <td contenteditable="true" data-date="october 22" >22</td>
+                        <td contenteditable="true" data-date="october 23" >23</td>
+                        <td contenteditable="true" data-date="october 24" >24</td>
+                        <td contenteditable="true" data-date="october 25" >25</td>
+                        <td contenteditable="true" data-date="october 26" >26</td>
+                        <td contenteditable="true" data-date="october 27" >27</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="october 28" >28</td>
+                        <td contenteditable="true" data-date="october 29" >29</td>
+                        <td contenteditable="true" data-date="october 30" >30</td>
+                        <td contenteditable="true" data-date="october 31" >31</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -679,44 +710,44 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
+                        <td contenteditable="true" data-date="november 1" >1</td>
+                        <td contenteditable="true" data-date="november 2" >2</td>
+                        <td contenteditable="true" data-date="november 3" >3</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
+                        <td contenteditable="true" data-date="november 4" >4</td>
+                        <td contenteditable="true" data-date="november 5" >5</td>
+                        <td contenteditable="true" data-date="november 6" >6</td>
+                        <td contenteditable="true" data-date="november 7" >7</td>
+                        <td contenteditable="true" data-date="november 8" >8</td>
+                        <td contenteditable="true" data-date="november 9" >9</td>
+                        <td contenteditable="true" data-date="november 10" >10</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
+                        <td contenteditable="true" data-date="november 11" >11</td>
+                        <td contenteditable="true" data-date="november 12" >12</td>
+                        <td contenteditable="true" data-date="november 13" >13</td>
+                        <td contenteditable="true" data-date="november 14" >14</td>
+                        <td contenteditable="true" data-date="november 15" >15</td>
+                        <td contenteditable="true" data-date="november 16" >16</td>
+                        <td contenteditable="true" data-date="november 17" >17</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
+                        <td contenteditable="true" data-date="november 18" >18</td>
+                        <td contenteditable="true" data-date="november 19" >19</td>
+                        <td contenteditable="true" data-date="november 20" >20</td>
+                        <td contenteditable="true" data-date="november 21" >21</td>
+                        <td contenteditable="true" data-date="november 22" >22</td>
+                        <td contenteditable="true" data-date="november 23" >23</td>
+                        <td contenteditable="true" data-date="november 24" >24</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
-                        <td contenteditable="true" >30</td>
+                        <td contenteditable="true" data-date="november 25" >25</td>
+                        <td contenteditable="true" data-date="november 26" >26</td>
+                        <td contenteditable="true" data-date="november 27" >27</td>
+                        <td contenteditable="true" data-date="november 28" >28</td>
+                        <td contenteditable="true" data-date="november 29" >29</td>
+                        <td contenteditable="true" data-date="november 30" >30</td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -745,47 +776,47 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td contenteditable="true" >1</td>
+                        <td contenteditable="true" data-date="1" >1</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >2</td>
-                        <td contenteditable="true" >3</td>
-                        <td contenteditable="true" >4</td>
-                        <td contenteditable="true" >5</td>
-                        <td contenteditable="true" >6</td>
-                        <td contenteditable="true" >7</td>
-                        <td contenteditable="true" >8</td>
+                        <td contenteditable="true" data-date="2" >2</td>
+                        <td contenteditable="true" data-date="3" >3</td>
+                        <td contenteditable="true" data-date="4" >4</td>
+                        <td contenteditable="true" data-date="5" >5</td>
+                        <td contenteditable="true" data-date="6" >6</td>
+                        <td contenteditable="true" data-date="7" >7</td>
+                        <td contenteditable="true" data-date="8" >8</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >9</td>
-                        <td contenteditable="true" >10</td>
-                        <td contenteditable="true" >11</td>
-                        <td contenteditable="true" >12</td>
-                        <td contenteditable="true" >13</td>
-                        <td contenteditable="true" >14</td>
-                        <td contenteditable="true" >15</td>
+                        <td contenteditable="true" data-date="9" >9</td>
+                        <td contenteditable="true" data-date="10" >10</td>
+                        <td contenteditable="true" data-date="11" >11</td>
+                        <td contenteditable="true" data-date="12" >12</td>
+                        <td contenteditable="true" data-date="13" >13</td>
+                        <td contenteditable="true" data-date="14" >14</td>
+                        <td contenteditable="true" data-date="15" >15</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >16</td>
-                        <td contenteditable="true" >17</td>
-                        <td contenteditable="true" >18</td>
-                        <td contenteditable="true" >19</td>
-                        <td contenteditable="true" >20</td>
-                        <td contenteditable="true" >21</td>
-                        <td contenteditable="true" >22</td>
+                        <td contenteditable="true" data-date="16" >16</td>
+                        <td contenteditable="true" data-date="17" >17</td>
+                        <td contenteditable="true" data-date="18" >18</td>
+                        <td contenteditable="true" data-date="19" >19</td>
+                        <td contenteditable="true" data-date="20" >20</td>
+                        <td contenteditable="true" data-date="21" >21</td>
+                        <td contenteditable="true" data-date="22" >22</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >23</td>
-                        <td contenteditable="true" >24</td>
-                        <td contenteditable="true" >25</td>
-                        <td contenteditable="true" >26</td>
-                        <td contenteditable="true" >27</td>
-                        <td contenteditable="true" >28</td>
-                        <td contenteditable="true" >29</td>
+                        <td contenteditable="true" data-date="23" >23</td>
+                        <td contenteditable="true" data-date="24" >24</td>
+                        <td contenteditable="true" data-date="25" >25</td>
+                        <td contenteditable="true" data-date="26" >26</td>
+                        <td contenteditable="true" data-date="27" >27</td>
+                        <td contenteditable="true" data-date="28" >28</td>
+                        <td contenteditable="true" data-date="29" >29</td>
                     </tr>
                     <tr>
-                        <td contenteditable="true" >30</td>
-                        <td contenteditable="true" >31</td>
+                        <td contenteditable="true" data-date="30" >30</td>
+                        <td contenteditable="true" data-date="31" >31</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -795,6 +826,39 @@
                 </tbody>
             </table>
         </div>
+
+        <footer class="position-relative pt-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a class="link facebook" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      
+                      <a class="link twitter" href="https://www.x.com">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      
+                      <a class="link instagram" href="https://www.instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      
+                      <a class="link youtube" href="https://www.youtube.com">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                </div>
+            </div>
+            <div class="row text-center position-absolute bottom-0 w-100 textColor">
+                <p>© 2024 Ľubomír Kmec. All rights reserved.</p>
+            </div>
+        </footer>
+
     </div>
+
+    <script src="./calendar_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://kit.fontawesome.com/d5395910c4.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

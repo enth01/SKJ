@@ -11,7 +11,13 @@
     .navbarVec:after{
         right: 0rem !important;
     }
-}
+    .stlpce{
+        aspect-ratio: 1;
+        width: 100vw;
+        height: unset !important;
+        margin-left: 10px;
+    }
+}   
 
 @media screen and (min-width: 768px) {
     #Header{
@@ -46,8 +52,13 @@ footer{
     background: transparent !important;
 }
 
+hr{
+    border-top: solid 3px white !important;
+}
+
 #body{
     background-color: #6C7B8B;
+    font-family: "Raleway", sans-serif;
 }
 
 .textColor{

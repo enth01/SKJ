@@ -13,6 +13,7 @@ function odosli_spravu(){
         emailjs.send('service_zwy4f8o', 'template_r0j6l3d', templateParams).then(
             (response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                alert("Your message was sent successfully");
             },
             (error) => {
                 console.log('FAILED...', error);

@@ -18,7 +18,7 @@
         <div class="cover-container d-flex h-100 mx-auto flex-column">
             <nav class="navbar navbar-expand-md" id="Header">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button onclick="paddingPreResponzivitu()" id="colapseButon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,41 +40,39 @@
                 </div>
             </nav>
 
-            <main role="main" class="inner cover pozadie">
-                <div class="centrovanie textColor">
-                    <h1 class="cover-heading" id="hlavnyNadpis">Half-year project</h1>
-                    <p class="lead">
-                        Ľubomír Kmec
-                    </p>
-                </div>
-            </main>
-
             <div class="row">
                 <div class="col-md">
-                    <p id="textMain" class="textColor">
-                        I have crafted a webpage featuring a calendar, a contact form, responsive design, and some personal information about myself. I trust it will be to your liking.
+                    <p id="textNaVrchu" class="textColor text-start my-5 mx-auto" style="max-width: 800px;margin-top: 10rem !important;">
+                        As a burgeoning force in the world of IT, I bring a unique blend of passion, skill, and determination to every project. With a background in Python, JavaScript, HTML, CSS, and an insatiable hunger for knowledge, I fearlessly navigate the ever-evolving landscape of technology. A dedicated student of the digital arts, I've honed my craft not only in the realms of programming but also in the intricate worlds of Photoshop and Adobe Illustrator, crafting digital masterpieces that captivate and inspire.
                     </p>
                 </div>               
             </div>
 
-            <div class="row text-uppercase">
-                <div class="col-md stlpceKontajner p-0">
-                    <h2 class="textColor">gym</h2>
-                    <div class="stlpec1 stlpce"></div>
-                </div>
-                <div class="col-md stlpceKontajner p-0">
-                    <h2 class="textColor">mma</h2>
-                    <div class="stlpec2 stlpce"></div>
-                </div>
-                <div class="col-md stlpceKontajner p-0">
-                    <h2 class="textColor">coding</h2>
-                    <div class="stlpec3 stlpce"></div>
-                </div>
-                <div class="col-md stlpceKontajner p-0">
-                    <h2 class="textColor">school</h2>
-                    <div class="stlpec4 stlpce"></div>
-                </div>
+            <div class="row">
+                <div class="col-md">
+                    <p class="textColor text-start my-5 mx-auto" style="max-width: 800px;">
+                        But my expertise extends far beyond the confines of code and pixels. As a fierce competitor in the realm of Mixed Martial Arts, I embody the spirit of discipline and perseverance both in and out of the ring. With a towering stature and the heart of a warrior, I command respect not only for my physical prowess but also for my unwavering dedication to my craft. And while my journey in the cage may have seen its share of setbacks, each defeat serves as fuel to my fire, propelling me ever forward in my quest for greatness.
+                    </p>
+                </div>               
             </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <p class="textColor text-start my-5 mx-auto" style="max-width: 800px;">
+                        Off the battlefield, I find solace in the rhythmic beats of rap music, drawing inspiration from the raw emotion and unapologetic lyricism of artists like Eminem, Kanye West, and Stormzy. And in the quiet moments between training sessions and coding marathons, I find companionship in my loyal companion, Benny the Maltese dog, whose unwavering loyalty serves as a constant reminder of the importance of loyalty and companionship in an ever-changing world.
+                    </p>
+                </div>               
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <p class="textColor text-start my-5 mx-auto" style="max-width: 800px;">
+                        With my eyes set firmly on the horizon, I am poised to leave an indelible mark on the world of technology and beyond. Armed with passion, talent, and an unyielding determination to succeed, I stand ready to take on whatever challenges come my way, forging my own path in a world brimming with endless possibilities.
+                    </p>
+                </div>               
+            </div>
+
+            <hr>
 
             <!-- footer -->
 
@@ -113,6 +111,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="https://kit.fontawesome.com/d5395910c4.js" crossorigin="anonymous"></script>
+
+        <script>
+            const navbar = document.getElementById("colapseButon");
+
+            function paddingPreResponzivitu(){
+                if (navbar.classList.contains('collapsed') == true) {
+                    document.getElementById("textNaVrchu").style.paddingTop = "10rem !important";
+                } if (navbar.classList.contains('collapsed') == false) {
+                    document.getElementById("textNaVrchu").style.paddingTop = "15rem !important";
+                    console.log('penis');
+                }
+            }
+        </script>
 
         <!-- skripty -->
 
