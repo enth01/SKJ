@@ -60,19 +60,19 @@
             <div class="row text-uppercase">
                 <div class="col-md stlpceKontajner p-0">
                     <h2 class="textColor">gym</h2>
-                    <div class="stlpec1 stlpce"></div>
+                    <div class="stlpec1 stlpce" onclick="goToGym()"></div>
                 </div>
                 <div class="col-md stlpceKontajner p-0">
                     <h2 class="textColor">mma</h2>
-                    <div class="stlpec2 stlpce"></div>
+                    <div class="stlpec2 stlpce" onclick="goToMma()"></div>
                 </div>
                 <div class="col-md stlpceKontajner p-0">
                     <h2 class="textColor">coding</h2>
-                    <div class="stlpec3 stlpce"></div>
+                    <div class="stlpec3 stlpce" onclick="goToCode()"></div>
                 </div>
                 <div class="col-md stlpceKontajner p-0">
                     <h2 class="textColor">school</h2>
-                    <div class="stlpec4 stlpce"></div>
+                    <div class="stlpec4 stlpce" onclick="goToSchool()"></div>
                 </div>
             </div>
 
@@ -113,6 +113,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="https://kit.fontawesome.com/d5395910c4.js" crossorigin="anonymous"></script>
+
+        <script>
+            function goToGym() {
+                window.location.href = './gym.html';
+            }
+            function goToMma() {
+                window.location.href = './mma.html';
+            }
+            function goToCode() {
+                window.location.href = './code.html';
+            }
+            function goToSchool() {
+                window.location.href = './school.html';
+            }
+        </script>
 
         <!-- skripty -->
 
